@@ -1,7 +1,7 @@
 <?php
 require("itemModel.php");
 class CarrinhoModel{
-    private ItemModel $item = array();
+    private ItemModel $items = array();
     private $quantidade;
     private $precoTotal;
 
@@ -17,11 +17,11 @@ class CarrinhoModel{
         $this->precoTotal;
     }
     public function getItem(){
-        $this->item;
+        $this->items;
     }
 
-    public function exibirCarrinho(ItemModel $itens){
-        $this->item.array_push($item);
+    public function exibirCarrinho($item){
+        $this->items.array_push($item);
     }
 
     public function fecharCarrinho(){
