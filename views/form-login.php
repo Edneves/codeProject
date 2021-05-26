@@ -4,7 +4,7 @@
 
         $user = new ClienteController();
 
-        if (isset($_POST['enviar'])) {
+        if (isset($_POST['logar'])) {
             $email = trim($_POST['email']);
             $senha = trim(md5($_POST['senha']));
             if ($user->login($email, $senha)) {
@@ -22,13 +22,13 @@
 		<form method="post" action="" id="fomularioLogin" name="formularioLogin">
 		    <h1>Login</h1>
 		    <p>
-		        <label for="email_login">Seu email</label>
-		        <input id="email_login" name="email_login" type="text" placeholder="ex. contato@htmlecsspro.com" />
+		        <label for="email">Seu email</label>
+		        <input id="email" name="email" type="text" placeholder="ex. contato@htmlecsspro.com" />
 		    </p>
 
 		    <p>
-		        <label for="senha_login">Sua senha</label>
-		        <input id="senha_login" name="senha_login" type="password" placeholder="ex. senha" />
+		        <label for="senha">Sua senha</label>
+		        <input id="senha" name="senha" type="password" placeholder="ex. senha" />
 		    </p>
 
 		    <p>

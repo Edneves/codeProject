@@ -30,7 +30,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <a class="navbar-brand" href="/home.html">
+        <a class="navbar-brand" href="../home.php">
           <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
@@ -73,7 +73,7 @@
 
         <li>
 
-          <a href="/promo.html">Promoções</a>
+          <a href="../promo.php">Promoções</a>
           <!--<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>

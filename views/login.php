@@ -8,7 +8,7 @@
 	$result = $user->isLoggedIn();
 	if($result){
 		header('Location: home.php');
-	}
+	} 
 
 ?>
 

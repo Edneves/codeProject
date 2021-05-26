@@ -42,7 +42,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <a class="navbar-brand" href="/promo.php">
+        <a class="navbar-brand" href="./home.php">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -102,7 +102,7 @@
 
         <li>
 
-          <a href="/promo.html">
+          <a href="./promo.php">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-percent"
               viewBox="0 0 16 16">
               <path
