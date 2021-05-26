@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,7 +40,7 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -146,7 +146,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/acucar-cristal.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/acucar-cristal.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 2,29 1Kg</h3>
@@ -160,7 +160,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/açúcar mascavo.jfif"
+                                    <img class="card-img-top" src="../img/Mercearia/açúcar mascavo.jfif"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 12,90 1kg </h3>
@@ -174,7 +174,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/arroz.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Mercearia/arroz.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 5,29 1Kg</h3>
                                     </h5>
@@ -187,7 +187,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/azeite de olivia.png"
+                                    <img class="card-img-top" src="../img/Mercearia/azeite de olivia.png"
                                         alt="Card image cap" width="1000" height="220">
                                     <h5 class="card-title">
                                         <h3>R$ 14,89 500ml</h3>
@@ -205,7 +205,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/biscoito creamcracker.jpeg"
+                                    <img class="card-img-top" src="../img/Mercearia/biscoito creamcracker.jpeg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 4,89 </h3>
@@ -219,7 +219,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/biscoito_maria.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/biscoito_maria.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 4,59</h3>
@@ -233,7 +233,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/café.png" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Mercearia/café.png" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 4,29</h3>
                                     </h5>
@@ -246,7 +246,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/Feijao Branco.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/Feijao Branco.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 6,59</h3>
@@ -264,7 +264,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/feijao carioca.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/feijao carioca.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 5,89 </h3>
@@ -278,7 +278,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/feijao preto.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/feijao preto.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 6,59</h3>
@@ -292,7 +292,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/flocao.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Mercearia/flocao.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 2,29</h3>
                                     </h5>
@@ -305,7 +305,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/leite em liquido.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/leite em liquido.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 4,59</h3>
@@ -323,7 +323,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/leite em po.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/leite em po.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 4,69 </h3>
@@ -337,7 +337,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/macarrão.jfif"
+                                    <img class="card-img-top" src="../img/Mercearia/macarrão.jfif"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 1,89</h3>
@@ -351,7 +351,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/milho de pipoca.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Mercearia/milho de pipoca.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 1,89</h3>
                                     </h5>
@@ -364,7 +364,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/oleodemilho.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/oleodemilho.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 7,59</h3>
@@ -382,7 +382,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/oleodesoja.jpeg"
+                                    <img class="card-img-top" src="../img/Mercearia/oleodesoja.jpeg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 6,89 </h3>
@@ -396,7 +396,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/sal.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/sal.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 0,89</h3>
@@ -410,7 +410,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/passatempo.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Mercearia/passatempo.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 1,99</h3>
                                     </h5>
@@ -423,7 +423,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Mercearia/trakinas.jpg"
+                                    <img class="card-img-top" src="../img/Mercearia/trakinas.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 2,59</h3>

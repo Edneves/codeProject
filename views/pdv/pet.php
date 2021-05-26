@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,7 +40,7 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -145,7 +145,7 @@
                     <div class="col-sm-3">
                       <div class="card">
                         <div class="card-body">
-                            <img class="card-img-top" src="/img/Pet/bola inteligente.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="../img/Pet/bola inteligente.jpg" alt="Card image cap">
                           <h5 class="card-title"><h3>R$ 98,90</h3></h5>
                           <p class="card-text">Bola Inteligente </p>
                           <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -156,7 +156,7 @@
                     <div class="col-sm-3">
                       <div class="card">
                         <div class="card-body">
-                            <img class="card-img-top" src="/img/Pet/caixa de transporte.jfif" alt="Card image cap">
+                            <img class="card-img-top" src="../img/Pet/caixa de transporte.jfif" alt="Card image cap">
                             <h5 class="card-title"><h3>R$ 110,90</h3></h5>
                             <p class="card-text">Caixa de Transporte </p>
                             <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -167,7 +167,7 @@
                     <div class="col-sm-3">
                         <div class="card">
                           <div class="card-body">
-                              <img class="card-img-top" src="/img/Pet/casa para cachorro.jpg" alt="Card image cap">
+                              <img class="card-img-top" src="../img/Pet/casa para cachorro.jpg" alt="Card image cap">
                               <h5 class="card-title"><h3>R$ 150,90</h3></h5>
                               <p class="card-text">Casa para Cachorro</p>
                               <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -178,7 +178,7 @@
                       <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <img class="card-img-top" src="/img/Pet/coleira.jpg" alt="Card image cap" width="1000" height="220">
+                                <img class="card-img-top" src="../img/Pet/coleira.jpg" alt="Card image cap" width="1000" height="220">
                                 <h5 class="card-title"><h3>R$ 20,89</h3></h5>
                                 <p class="card-text">Coleira</p>
                                 <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -193,7 +193,7 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="/img/Pet/mordedor anel.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Pet/mordedor anel.jpg" alt="Card image cap">
                       <h5 class="card-title"><h3>R$ 55,90 6 un.</h3></h5>
                       <p class="card-text">Mordedor Anel para Cachorro </p>
                       <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -204,7 +204,7 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="/img/Pet/osso pra cachorro.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Pet/osso pra cachorro.png" alt="Card image cap">
                         <h5 class="card-title"><h3>R$ 25,99</h3></h5>
                         <p class="card-text">Osso para cachorro </p>
                         <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -215,7 +215,7 @@
                 <div class="col-sm-3">
                     <div class="card">
                         <div class="card-body">
-                            <img class="card-img-top" src="/img/Pet/raçaocat.jpg" alt="Card image cap">
+                            <img class="card-img-top" src="../img/Pet/raçaocat.jpg" alt="Card image cap">
                             <h5 class="card-title"><h3>R$ 15,69 </h3></h5>
                             <p class="card-text">Ração para Gato 3Kg</p>
                             <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
@@ -226,7 +226,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                      <div class="card-body">
-                              <img class="card-img-top" src="/img/Pet/raçãodog.jfif" alt="Card image cap">
+                              <img class="card-img-top" src="../img/Pet/raçãodog.jfif" alt="Card image cap">
                               <h5 class="card-title"><h3>R$ 110,90</h3></h5>
                               <p class="card-text">Ração para Cachorro 20Kg</p>
                               <a href="#" class="btn btn btn-ligh ">Comprar</a>

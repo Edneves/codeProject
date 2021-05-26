@@ -1,3 +1,29 @@
+<?php
+	session_start();
+	include_once 'head.html';
+	include_once '../DataBase/conexao.php';
+	include_once '../App/Controller/ClienteController.php';
+
+	$user = new ClienteController();
+	$conn = new Conexao();
+	$conn = $conn->conexao();
+
+	$result = $user->isLoggedIn();
+
+	$stmt4 = $conn->prepare('
+		SELECT * FROM carrinho_has_produto;');
+	$stmt4->execute();
+	$count = 0;
+	$count = $stmt4->rowCount();
+
+	if($result == false){
+		header('Location: login.php');
+	}
+	else if(!isset($_GET['enviar'])){
+		header('Location: cart.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,7 +38,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
 		integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<!-- Our Custom CSS -->
-	<link rel="stylesheet" href="style5.css">
+	<link rel="stylesheet" href="./pdv/style5.css">
 	<!--link para o w3 bootstrap-->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 

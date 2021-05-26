@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,7 +40,7 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -145,7 +145,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/picanha.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/picanha.png" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 78,90 Kg</h3>
                         </h5>
@@ -158,7 +158,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/fileespecial.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/fileespecial.png" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 42,60 Kg</h3>
                         </h5>
@@ -171,7 +171,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/frango.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/frango.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 13,09 Kg</h3>
                         </h5>
@@ -184,7 +184,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/frangointeiro.png" alt="Card image cap" width="1000"
+                        <img class="card-img-top" src="../img/Açougue/frangointeiro.png" alt="Card image cap" width="1000"
                           height="220">
                         <h5 class="card-title">
                           <h3>R$ 7,99 Kg</h3>
@@ -202,7 +202,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/musculo.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/musculo.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 22,95 Kg</h3>
                         </h5>
@@ -215,7 +215,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/patinho.jfif" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/patinho.jfif" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 33,90 Kg</h3>
                         </h5>
@@ -228,7 +228,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/filezinhosassami.jfif" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/filezinhosassami.jfif" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 14,49 Kg</h3>
                         </h5>
@@ -241,7 +241,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/pernilsuino.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/pernilsuino.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 23,90</h3>
                         </h5>
@@ -259,7 +259,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/bisteca.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/bisteca.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 20,90 Kg</h3>
                         </h5>
@@ -272,7 +272,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/mortadela.jfif" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/mortadela.jfif" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 14,90 Kg</h3>
                         </h5>
@@ -285,7 +285,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/foto_large.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/foto_large.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 44,90 Kg</h3>
                         </h5>
@@ -298,7 +298,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/queijo-prato-fatiado.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/queijo-prato-fatiado.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 44,90 Kg</h3>
                         </h5>
@@ -315,7 +315,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/presunto.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/presunto.jpg" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 25,90 Kg</h3>
                         </h5>
@@ -328,7 +328,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/charque.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/charque.png" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 31,90 Kg</h3>
                         </h5>
@@ -341,7 +341,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/calabresa.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/calabresa.png" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 18,90 Kg</h3>
                         </h5>
@@ -354,7 +354,7 @@
                   <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
-                        <img class="card-img-top" src="/img/Açougue/salsicha.png" alt="Card image cap">
+                        <img class="card-img-top" src="../img/Açougue/salsicha.png" alt="Card image cap">
                         <h5 class="card-title">
                           <h3>R$ 10,90</h3>
                         </h5>

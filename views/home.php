@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	include_once 'head.html';
+	include_once '../App/Controller/ClienteController.php';
+
+	$user = new ClienteController();
+
+	$result = $user->isLoggedIn();
+
+?>
 <!DOCTYPE html>
 <html lang="pr-br">
 
@@ -12,7 +22,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="./pdv/style5.css">
   <!--link para o w3 bootstrap-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -32,7 +42,7 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <a class="navbar-brand" href="/home.html">
+        <a class="navbar-brand" href="/promo.php">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -64,10 +74,10 @@
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
-              <a href="/pdv/bebidas.html">Bebidas</a>
+              <a href="bebidas.php">Bebidas</a>
             </li>
             <li>
-              <a href="/pdv/padaria.html">Café da Manhã/Padaria</a>
+              <a href="./img/pdv/padaria.html">Café da Manhã/Padaria</a>
             </li>
             <li>
               <a href="/pdv/carnesfrios.html">Carnes e Frios</a>
@@ -128,7 +138,7 @@
           <!--formulario de loguin-->
           <div class="navbar">
             <button type="button" class="btn btn-outline-secondary">
-            <a class="navbar-brand" href="/login/home.html">
+            <a class="navbar-brand" href="./login.php">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -151,16 +161,16 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/img/promocoes/teste2.jpeg" alt="Primeiro Slide">
+            <img class="d-block w-100" src="./img/promocoes/teste2.jpeg" alt="Primeiro Slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/img/promocoes/teste.png" alt="Segundo Slide">
+            <img class="d-block w-100" src="./img/promocoes/teste.png" alt="Segundo Slide">
             <div class="carousel-caption d-none d-md-block">
               
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/img/promocoes/teste3.jpeg" alt="Terceiro Slide">
+            <img class="d-block w-100" src="./img/promocoes/teste3.jpeg" alt="Terceiro Slide">
           </div>
         </div>
 
@@ -219,7 +229,7 @@
                         <div class="col-sm-3">
                           <div class="card btn-outline">
                             <div class="card-body">
-                              <img class="card-img-top" src="/img/promocoes/desodorante.jfif" alt="Card image cap">
+                              <img class="card-img-top" src="./img/promocoes/desodorante.jfif" alt="Card image cap">
                               <h5 class="card-title text-center">Desodorante Nívea</h5>
                               <p class="card-text">Por apenas R$ 9,99.</p>
                               <a href="/pdv/higienepessoal.html" class="btn btn-outline-secondary">Acessar</a>
@@ -229,7 +239,7 @@
                         <div class="col-sm-3">
                           <div class="card btn-outline">
                             <div class="card-body">
-                              <img class="card-img-top" src="/img/promocoes/patinho.jfif" alt="Card image cap">
+                              <img class="card-img-top" src="./img/promocoes/patinho.jfif" alt="Card image cap">
                               <h5 class="card-title text-center">Patinho</h5>
                               <p class="card-text">O kilo por apenas R$ 33,90.</p>
                               <a href="/pdv/carnesfrios.html" class="btn btn-outline-secondary">Acessar</a>
@@ -239,7 +249,7 @@
                         <div class="col-sm-3">
                           <div class="card">
                             <div class="card-body btn-outline">
-                              <img class="card-img-top" src="/img/promocoes/passport.jpg" alt="Card image cap">
+                              <img class="card-img-top" src="./img/promocoes/passport.jpg" alt="Card image cap">
                               <h5 class="card-title text-center">
                                 Passport
                               </h5>
@@ -251,7 +261,7 @@
                         <div class="col-sm-3">
                           <div class="card btn-outline">
                             <div class="card-body">
-                              <img class="card-img-top" src="/img/promocoes/frango.jpg" alt="Card image cap">
+                              <img class="card-img-top" src="./img/promocoes/frango.jpg" alt="Card image cap">
                               <h5 class="card-title text-center">Peito de frango</h5>
                               <p class="card-text">Somente R$ 13,09.</p>
                               <a href="/pdv/carnesfrios.html" class="btn btn-outline-secondary">Acessar</a>
@@ -288,7 +298,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="/img/Bebidas/blacklabel.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="./img/Bebidas/blacklabel.jpg" alt="Card image cap">
                     <h5 class="card-title">
                       <h3>R$ 112,90</h3>
                     </h5>
@@ -300,7 +310,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="/img/Bebidas/jackdaniels.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="./img/Bebidas/jackdaniels.jpg" alt="Card image cap">
                     <h5 class="card-title">
                       <h3>R$ 122,90</h3>
                     </h5>
@@ -312,7 +322,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="/img/Bebidas/cocacola.jfif" alt="Card image cap">
+                    <img class="card-img-top" src="./img/Bebidas/cocacola.jfif" alt="Card image cap">
                     <h5 class="card-title">
                       <h3>R$ 2,10</h3>
                     </h5>
@@ -324,7 +334,7 @@
               <div class="col-sm-3">
                 <div class="card">
                   <div class="card-body">
-                    <img class="card-img-top" src="/img/Bebidas/redbull.png" alt="Card image cap">
+                    <img class="card-img-top" src="./img/Bebidas/redbull.png" alt="Card image cap">
                     <h5 class="card-title">
                       <h3>R$ 24,00</h3>
                     </h5>

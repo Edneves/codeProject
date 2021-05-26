@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>CompraCerta | hortfrut </title>
+  <title>CompraCerta | Padaria </title>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,7 +40,7 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -98,7 +98,7 @@
 -->
       </ul>
 
-      <!--<ul class="list-unstyled CTAs">
+    <!--  <ul class="list-unstyled CTAs">
         <li>
           <a href="#" class="download">Download source</a>
         </li>
@@ -132,8 +132,8 @@
 
       <div class="container">
         <div class=" text-center">
-          <h1>PROMOÇÕES IMPERDIVEIS</h1>
-          <p>Produltos com 20% de desconto </p>
+          <h1>Padaria </h1>
+          <p>Café da Manhã com Qualidade </p>
         </div>
 
         <div class="container">
@@ -145,11 +145,11 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/maquina_brastemp.png" alt="Card image cap">
+                      <img class="card-img-top" src="../img/Padaria/paofrances.jpeg" alt="Card image cap">
                       <h5 class="card-title">
-                        <h3>R$ 980,66</h3>
+                        <h3>R$ 4,99 Kg</h3>
                       </h5>
-                      <p class="card-text">Maquila de lavar Brastemp</p>
+                      <p class="card-text">Pão Francês</p>
                       <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                       <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
@@ -158,11 +158,11 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/panela.png" alt="Card image cap">
+                      <img class="card-img-top" src="../img/Padaria/brioche.jpg" alt="Card image cap">
                       <h5 class="card-title">
-                        <h3>R$ 98,06</h3>
+                        <h3>R$ 5,90 un</h3>
                       </h5>
-                      <p class="card-text">Jogo de Panelas</p>
+                      <p class="card-text">Brioche </p>
                       <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                       <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
@@ -171,20 +171,27 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/hortfrut.jpg" alt="Card image cap">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <img class="card-img-top" src="../img/Padaria/miniSalgados.jpg" alt="Card image cap">
+                      <h5 class="card-title">
+                        <h3>R$ 19,90 Kg</h3>
+                      </h5>
+                      <p class="card-text">Mini Salgados Diversos</p>
+                      <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                      <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/hortfrut.jpg" alt="Card image cap">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <img class="card-img-top" src="../img/Padaria/paodeformapullman.jpg" alt="Card image cap"
+                        width="1000" height="220">
+                      <h5 class="card-title">
+                        <h3>R$ 4,89</h3>
+                      </h5>
+                      <p class="card-text">Pão de forma Pullman</p>
+                      <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                      <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
                 </div>
@@ -195,12 +202,12 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/maquina_brastemp.png" alt="Card image cap">
+                      <img class="card-img-top" src="../img/Padaria/paodequeijo.jpeg" alt="Card image cap">
                       <h5 class="card-title">
-                        <h3>R$ 980,66</h3>
+                        <h3>R$ 5,90 6 un.</h3>
                       </h5>
-                      <p class="card-text">Maquila de lavar Brastemp</p>
-                      <a href="#" class="btn btn btn-ligh ">Comprar</a>
+                      <p class="card-text">Pão de queijo</p>
+                      <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                       <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
@@ -208,12 +215,12 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/panela.png" alt="Card image cap">
+                      <img class="card-img-top" src="../img/Padaria/tortadechocolate.jpg" alt="Card image cap">
                       <h5 class="card-title">
-                        <h3>R$ 98,06</h3>
+                        <h3>R$ 5,99</h3>
                       </h5>
-                      <p class="card-text">Jogo de Panelas</p>
-                      <a href="#" class="btn btn btn-ligh ">Comprar</a>
+                      <p class="card-text">Fatia de Torta de Chocolate</p>
+                      <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                       <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
@@ -221,20 +228,26 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/hortfrut.jpg" alt="Card image cap">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <img class="card-img-top" src="../img/Padaria/tortadelimao.jpg" alt="Card image cap">
+                      <h5 class="card-title">
+                        <h3>R$ 5,99</h3>
+                      </h5>
+                      <p class="card-text">Fatia de Torta de Limão</p>
+                      <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                      <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="/img/promocoes/hortfrut.jpg" alt="Card image cap">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <img class="card-img-top" src="../img/Padaria/sucodelaranja.jpg" alt="Card image cap">
+                      <h5 class="card-title">
+                        <h3>R$ 12,59</h3>
+                      </h5>
+                      <p class="card-text">Suco de Laranja</p>
+                      <a href="#" class="btn btn btn-ligh ">Comprar</a>
+                      <a href="#" class="btn btn btn-ligh">Carrinho</a>
                     </div>
                   </div>
                 </div>
@@ -243,6 +256,7 @@
           </div>
         </div>
       </div>
+
 
     </div>
   </div>

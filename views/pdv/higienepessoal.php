@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>CompraCerta | Limpeza </title>
+  <title>CompraCerta | higiene Pessoal </title>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,7 +40,7 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -98,7 +98,7 @@
 -->
       </ul>
 
-     <!-- <ul class="list-unstyled CTAs">
+    <!--  <ul class="list-unstyled CTAs">
         <li>
           <a href="#" class="download">Download source</a>
         </li>
@@ -132,8 +132,8 @@
 
       <div class="container">
         <div class=" text-center">
-            <h1>Limpeza e Utilidades</h1>
-            <p>O melhor para o cuidado com seu Lar </p>
+            <h1>Higiene Pessoal </h1>
+            <p>Encotre tudo para o cuidado com seu Corpo.</p>
         </div>
 
         <div class="container">
@@ -145,12 +145,12 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/agua sanitária.png"
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/desodorante.jfif"
                                         alt="Card image cap">
                                     <h5 class="card-title">
-                                        <h3>R$ 10,99</h3>
+                                        <h3>R$ 9,99</h3>
                                     </h5>
-                                    <p class="card-text">Água sanitária 5LT</p>
+                                    <p class="card-text">Desodorante </p>
                                     <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                                     <a href="#" class="btn btn btn-ligh">Carrinho</a>
                                 </div>
@@ -159,12 +159,12 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/amaciante downy.jpg"
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/escova.png"
                                         alt="Card image cap">
                                     <h5 class="card-title">
-                                        <h3>R$ 12,90</h3>
+                                        <h3>R$ 13,89 3un</h3>
                                     </h5>
-                                    <p class="card-text">Amaciante Downy 500ml</p>
+                                    <p class="card-text">Escova de Dente</p>
                                     <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                                     <a href="#" class="btn btn btn-ligh">Carrinho</a>
                                 </div>
@@ -173,12 +173,12 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/bucha para pratos.jpg"
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/filtro solar 30Fps.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
-                                        <h3>R$ 8,69</h3>
+                                        <h3>R$ 49,89</h3>
                                     </h5>
-                                    <p class="card-text">Bucha para Pratos</p>
+                                    <p class="card-text">Protetor solar 30fps </p>
                                     <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
                                     <a href="#" class="btn btn btn-ligh">Carrinho</a>
                                 </div>
@@ -187,130 +187,13 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/Desinfetante Sanitário.jpg"
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/fiodental.jfif"
                                         alt="Card image cap" width="1000" height="220">
                                     <h5 class="card-title">
                                         <h3>R$ 8,99</h3>
                                     </h5>
-                                    <p class="card-text">Desinfetante Sanitário</p>
+                                    <p class="card-text">Fio dental 100m</p>
                                     <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="promo">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/detergente.jpg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 1,95 </h3>
-                                    </h5>
-                                    <p class="card-text">Detergente em Liquido </p>
-                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/omo piso.jpg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 6,90 </h3>
-                                    </h5>
-                                    <p class="card-text">Desinfetante para Piso OMO </p>
-                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/pedra sanitaria.jpeg"
-                                        alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 7,49</h3>
-                                    </h5>
-                                    <p class="card-text">Pedra Sanitária</p>
-                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/pinho sol.png" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 6,90</h3>
-                                    </h5>
-                                    <p class="card-text">Desinfetante Pinho Sol </p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="promo">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/sabao em barra.jpg"
-                                        alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 5,80 </h3>
-                                    </h5>
-                                    <p class="card-text">Sabão em Barra </p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/sabaoemliquido.jpg"
-                                        alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 14,90 </h3>
-                                    </h5>
-                                    <p class="card-text">Sabão em Liquido OMO</p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/sabaoempo.png" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 8,69</h3>
-                                    </h5>
-                                    <p class="card-text">Sabão em Pó OMO</p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/uau.jpeg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 4,80</h3>
-                                    </h5>
-                                    <p class="card-text">UAU Multiuso</p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
                                     <a href="#" class="btn btn btn-ligh">Carrinho</a>
                                 </div>
                             </div>
@@ -322,51 +205,53 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/vassoura.jpg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 11,90 Kg</h3>
-                                    </h5>
-                                    <p class="card-text">Vassoura </p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/ODORIZADO.jpg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 11,80 Kg</h3>
-                                    </h5>
-                                    <p class="card-text">Odorizado Bom Air </p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/alcoll 70.jpg" alt="Card image cap">
-                                    <h5 class="card-title">
-                                        <h3>R$ 7,90 Kg</h3>
-                                    </h5>
-                                    <p class="card-text">Álcool 70%</p>
-                                    <a href="#" class="btn btn btn-ligh ">Comprar</a>
-                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img class="card-img-top" src="/img/limpeza/alcool em gel.jpeg"
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/pastadedente.jpg"
                                         alt="Card image cap">
                                     <h5 class="card-title">
-                                        <h3>R$ 10,70</h3>
+                                        <h3>R$ 4,89</h3>
                                     </h5>
-                                    <p class="card-text">Álcool em Gel</p>
+                                    <p class="card-text">Pasta de Dente</p>
+                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/perfume tabu.jpg"
+                                        alt="Card image cap">
+                                    <h5 class="card-title">
+                                        <h3>R$ 14,99</h3>
+                                    </h5>
+                                    <p class="card-text">Perfume Tabu</p>
+                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/sabo.jpg" alt="Card image cap">
+                                    <h5 class="card-title">
+                                        <h3>R$ 1,49</h3>
+                                    </h5>
+                                    <p class="card-text">Sabonete</p>
+                                    <a href="../login/home.html" class="btn btn btn-ligh ">Comprar</a>
+                                    <a href="#" class="btn btn btn-ligh">Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img class="card-img-top" src="../img/Higiene Pessoal/Shampoo Baboon.jpg"
+                                        alt="Card image cap">
+                                    <h5 class="card-title">
+                                        <h3>R$ 12,59</h3>
+                                    </h5>
+                                    <p class="card-text">Shampoo Baboon</p>
                                     <a href="#" class="btn btn btn-ligh ">Comprar</a>
                                     <a href="#" class="btn btn btn-ligh">Carrinho</a>
                                 </div>
@@ -377,6 +262,7 @@
             </div>
         </div>
     </div>
+
 
       </div>
     </div>
