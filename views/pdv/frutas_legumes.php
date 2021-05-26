@@ -44,29 +44,29 @@
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li>
-              <a href="/pdv/bebidas.html">Bebidas</a>
+          <li>
+              <a href="./bebidas.php">Bebidas</a>
             </li>
             <li>
-              <a href="/pdv/padaria.html">Café da Manhã/Padaria</a>
+              <a href="./padaria.php">Café da Manhã/Padaria</a>
             </li>
             <li>
-              <a href="/pdv/carnesfrios.html">Carnes e Frios</a>
+              <a href="./carnesfrios.php">Carnes e Frios</a>
             </li>
             <li>
-              <a href="/pdv/frutas_legumes.html">Frutas e Legumes</a>
+              <a href="./frutas_legumes.php">Frutas e Legumes</a>
             </li>
             <li>
-              <a href="/pdv/higienepessoal.html">Higiene pessoal</a>
+              <a href="./higienepessoal.php">Higiene pessoal</a>
             </li>
             <li>
-              <a href="/pdv/mercearia.html">Mercearia em geral e Enlatados</a>
+              <a href="./mercearia.php">Mercearia em geral e Enlatados</a>
             </li>
             <li>
-              <a href="/pdv/limpeza.html">Produtos de limpeza e Utilidades</a>
+              <a href="./limpeza.php">Produtos de limpeza e Utilidades</a>
             </li>
             <li>
-              <a href="/pdv/pet.html">Pet</a>
+              <a href="./pet.php">Pet</a>
             </li>
           </ul>
         </li>

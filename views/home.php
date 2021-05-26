@@ -74,28 +74,28 @@
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
-              <a href="bebidas.php">Bebidas</a>
+              <a href="./pdv/bebidas.php">Bebidas</a>
             </li>
             <li>
-              <a href="./img/pdv/padaria.html">Café da Manhã/Padaria</a>
+              <a href="./pdv/padaria.php">Café da Manhã/Padaria</a>
             </li>
             <li>
-              <a href="/pdv/carnesfrios.html">Carnes e Frios</a>
+              <a href="./pdv/carnesfrios.php">Carnes e Frios</a>
             </li>
             <li>
-              <a href="/pdv/frutas_legumes.html">Frutas e Legumes</a>
+              <a href="./pdv/frutas_legumes.php">Frutas e Legumes</a>
             </li>
             <li>
-              <a href="/pdv/higienepessoal.html">Higiene pessoal</a>
+              <a href="./pdv/higienepessoal.php">Higiene pessoal</a>
             </li>
             <li>
-              <a href="/pdv/mercearia.html">Mercearia em geral e Enlatados</a>
+              <a href="./pdv/mercearia.php">Mercearia em geral e Enlatados</a>
             </li>
             <li>
-              <a href="/pdv/limpeza.html">Produtos de limpeza e Utilidades</a>
+              <a href="./pdv/limpeza.php">Produtos de limpeza e Utilidades</a>
             </li>
             <li>
-              <a href="/pdv/pet.html">Pet</a>
+              <a href="./pdv/pet.php">Pet</a>
             </li>
           </ul>
         </li>

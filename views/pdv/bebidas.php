@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="/style5.css">
+  <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -31,7 +31,7 @@
     <nav id="sidebar">
       <div class="sidebar-header">
         <a class="navbar-brand" href="/home.html">
-          <img src="/img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img src="../img/botaohome.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Compra Certa
         </a>
       </div>
@@ -40,33 +40,33 @@
         <h3 color="">Produtos</h3>
         <li class="active">
           <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
-            <img src="/img/menu.ico" width="25" height="25">
+            <img src="../img/menu.ico" width="25" height="25">
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
             <li>
-              <a href="/pdv/bebidas.html">Bebidas</a>
+              <a href="./bebidas.php">Bebidas</a>
             </li>
             <li>
-              <a href="/pdv/padaria.html">Café da Manhã/Padaria</a>
+              <a href="./padaria.php">Café da Manhã/Padaria</a>
             </li>
             <li>
-              <a href="/pdv/carnesfrios.html">Carnes e Frios</a>
+              <a href="./carnesfrios.php">Carnes e Frios</a>
             </li>
             <li>
-              <a href="/pdv/frutas_legumes.html">Frutas e Legumes</a>
+              <a href="./frutas_legumes.php">Frutas e Legumes</a>
             </li>
             <li>
-              <a href="/pdv/higienepessoal.html">Higiene pessoal</a>
+              <a href="./higienepessoal.php">Higiene pessoal</a>
             </li>
             <li>
-              <a href="/pdv/mercearia.html">Mercearia em geral e Enlatados</a>
+              <a href="./mercearia.php">Mercearia em geral e Enlatados</a>
             </li>
             <li>
-              <a href="/pdv/limpeza.html">Produtos de limpeza e Utilidades</a>
+              <a href="./limpeza.php">Produtos de limpeza e Utilidades</a>
             </li>
             <li>
-              <a href="/pdv/pet.html">Pet</a>
+              <a href="./pet.php">Pet</a>
             </li>
           </ul>
         </li>
@@ -145,7 +145,7 @@
                         <div class="col-sm-3">
                             <div id="teste" class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/redlabel.jpg" Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/redlabel.jpg" Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$69,90</h3>
                                     </h5>
@@ -158,7 +158,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/blacklabel.jpg" width="250" height="220"
+                                    <img class="card-img-top" src="../img/Bebidas/blacklabel.jpg" width="250" height="220"
                                         alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 112,90</h3>
@@ -172,7 +172,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/jackdaniels.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/jackdaniels.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 122,90</h3>
                                     </h5>
@@ -185,7 +185,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/oldpar.jpg" alt="Card image cap"
+                                    <img class="card-img-top" src="../img/Bebidas/oldpar.jpg" alt="Card image cap"
                                         width="1000" height="220">
                                     <h5 class="card-title">
                                         <h3>R$ 115,90</h3>
@@ -203,7 +203,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/Passport.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/Passport.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 69,90</h3>
                                     </h5>
@@ -216,7 +216,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/TEACHERS.png" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/TEACHERS.png" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 79,90</h3>
                                     </h5>
@@ -229,7 +229,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/maddog.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/maddog.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 9,90</h3>
                                     </h5>
@@ -242,7 +242,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/redbull.png" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/redbull.png" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 24,00</h3>
                                     </h5>
@@ -255,7 +255,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/cocacola.jfif" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/cocacola.jfif" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 2,10</h3>
                                     </h5>
@@ -268,7 +268,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/cocazero.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/cocazero.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 2,35</h3>
                                     </h5>
@@ -281,7 +281,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/cocacola600ml.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/cocacola600ml.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 3,79</h3>
                                     </h5>
@@ -294,7 +294,7 @@
                         <div class="col-sm-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <img class="card-img-top" src="/img/Bebidas/cocacola2lt.jpg" alt="Card image cap">
+                                    <img class="card-img-top" src="../img/Bebidas/cocacola2lt.jpg" alt="Card image cap">
                                     <h5 class="card-title">
                                         <h3>R$ 6,00</h3>
                                     </h5>

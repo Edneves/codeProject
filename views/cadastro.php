@@ -7,7 +7,7 @@ $user = new ClienteController();
 
 $result = $user->isLoggedIn();
 if ($result) {
-  header('Location: home.php');
+  header('Location: cadastro.php');
 }
 
 ?>
