@@ -1,3 +1,19 @@
+<?php
+if (session_status() != PHP_SESSION_ACTIVE) {
+  session_start();
+}
+function exibirDados()
+{
+  if ($_SESSION['email'] == true) {
+    echo $_SESSION['email'];
+  } else {
+    echo '<a href="../home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+  </svg></a>';
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -9,17 +25,14 @@
   <title>CompraCerta | Padaria </title>
 
   <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <!-- Our Custom CSS -->
   <link rel="stylesheet" href="./style5.css">
 
   <!-- Font Awesome JS -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
   </script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
   </script>
 
 </head>
@@ -44,7 +57,7 @@
             Categoria
           </a>
           <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li>
+            <li>
               <a href="./bebidas.php">Bebidas</a>
             </li>
             <li>
@@ -98,7 +111,7 @@
 -->
       </ul>
 
-    <!--  <ul class="list-unstyled CTAs">
+      <!--  <ul class="list-unstyled CTAs">
         <li>
           <a href="#" class="download">Download source</a>
         </li>
@@ -111,7 +124,7 @@
     <!-- Page Content Holder -->
     <div id="content">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar " id="navbar">
 
         <ul class="nav justify-content-center">
           <form class="d-flex">
@@ -120,14 +133,14 @@
           </form>
         </ul>
 
-        <!--formulario de loguin
-                  <div class="nav justify-content-find">
-                    <a class="navbar-brand" href="/login/home.html">
-                      <img src="/img/logon.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                      Entrar
-                    </a>
-                  </div>
-                  -->
+        <div class="navbar">
+          <button type="button" class="btn btn-outline-primary">
+            <?php
+            exibirDados();
+            ?>
+            </a>
+          </button>
+        </div>
       </nav>
 
       <div class="container">
@@ -184,8 +197,7 @@
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
-                      <img class="card-img-top" src="../img/Padaria/paodeformapullman.jpg" alt="Card image cap"
-                        width="1000" height="220">
+                      <img class="card-img-top" src="../img/Padaria/paodeformapullman.jpg" alt="Card image cap" width="1000" height="220">
                       <h5 class="card-title">
                         <h3>R$ 4,89</h3>
                       </h5>
@@ -263,21 +275,18 @@
   </div>
 
   <!-- jQuery CDN - Slim version (=without AJAX) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
   <!-- Popper.JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
   </script>
   <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
 
   <script type="text/javascript">
-    $(document).ready(function () {
-      $('#sidebarCollapse').on('click', function () {
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
       });

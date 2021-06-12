@@ -1,16 +1,3 @@
-<?php
-	session_start();
-	//include_once 'head.html';
-	include_once '../App/Controller/ClienteController.php';
-
-	$user = new ClienteController();
-
-	$result = $user->isLoggedIn();
-	if($result){
-		header('Location: home.php');
-	} 
-
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -32,14 +19,35 @@
 <body>
  
   <div class="container" >
-   
-     
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <?php
-          include_once("form-login.php")
-        ?>    
+      <form method="POST" action="VALIDAUSUARIO" id="fomularioLogin" name="formularioLogin">
+		    <h1>Login</h1>
+		    <p>
+		        <label for="email_login">Seu email</label>
+		        <input id="email_login" name="email_login" type="text" placeholder="ex. contato@htmlecsspro.com" />
+		    </p>
+
+		    <p>
+		        <label for="senha_login">Sua senha</label>
+		        <input id="senha_login" name="senha_login" type="password" placeholder="ex. senha" />
+		    </p>
+
+		    <p>
+		        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+		        <label for="manterlogado">Manter-me logado</label>
+		    </p>
+
+		    <p>
+		        <input type="submit" value="Logar"/>
+		    </p>
+
+		    <p class="link">
+		        Ainda não tem conta?
+		        <a href="./Cadastro.php">Cadastre-se</a>
+		    </p>
+		</form> 
       </div>
     </div>
   </div>  

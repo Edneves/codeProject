@@ -1,3 +1,19 @@
+<?php
+if (session_status() != PHP_SESSION_ACTIVE) {
+  session_start();
+}
+function exibirDados()
+{
+  if ($_SESSION['email'] == true) {
+    echo $_SESSION['email'];
+  } else {
+    echo '<a href="./home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+  </svg></a>';
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -104,7 +120,7 @@
     <!-- Page Content Holder -->
     <div id="content">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar " id="navbar">
 
         <ul class="nav justify-content-center">
           <form class="d-flex">
@@ -112,7 +128,14 @@
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
           </form>
         </ul>
-
+        <div class="navbar">
+          <button type="button" class="btn btn-outline-primary">
+            <?php
+            exibirDados();
+            ?>
+            </a>
+          </button>
+        </div>
       </nav>
 
       <div class="container">
@@ -127,6 +150,7 @@
                     <img class="card-img-top" src="./img/promocoes/maquina_brastemp.png" alt="Card image cap">
                     <h5 class="card-title">
                       <h3>R$ 2.280,66</h3>
+                      
                     </h5>
                     <p class="card-text">Maquina de lavar Brastemp 14 kG</p>
                     <a href="#" class="btn btn btn-ligh ">Comprar</a>
