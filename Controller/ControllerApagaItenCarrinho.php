@@ -16,7 +16,7 @@ class ControladorApagaItemCarrinho implements IControlador{
             //apaga do carrinho
             $this->carrinhoSession->apagar($_POST['id']);
         }
-        header('Location:CarrinhoModel', true,302);
+        header('Location:Carrinho', true,302);
 
      }
 

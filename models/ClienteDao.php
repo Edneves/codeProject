@@ -78,16 +78,13 @@ class ClienteDAO{
          $sql->execute();
          
          if($sql->rowCount()>0){
-            $dado = $sql->fetch();
-            $_SESSION['email'] = $dado['email'];
+            $dado = $sql->fetch(PDO::FETCH_OBJ);
+            $_SESSION['id'] = $dado->id;
             return true;
          }
          else{
             return false;
          }
-         
-      
-
       }
       catch(PDOException $e){
          echo "ERRO AO CONSULTAR O EMAIL". $e;

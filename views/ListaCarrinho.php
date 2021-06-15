@@ -1,17 +1,17 @@
 <?php
 if (session_status() != PHP_SESSION_ACTIVE) {
-  session_start();
+	session_start();
 }
 function exibirDados()
 {
-  if ($_SESSION['email'] == true) {
-    echo $_SESSION['email'];
-  } else {
-    echo '<a href="./home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+	if (!empty($_SESSION['id'])) {
+		echo $_SESSION['id'];
+	} else {
+		echo '<a href="./home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
   </svg></a>';
-  }
+	}
 }
 ?>
 <!DOCTYPE html>
@@ -27,7 +27,7 @@ function exibirDados()
 	<!-- Bootstrap CSS CDN -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<!-- Our Custom CSS -->
-	<link rel="stylesheet" href="./pdv/style5.css">
+	<link rel="stylesheet" href="./style5.css">
 	<!--link para o w3 bootstrap-->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -66,42 +66,17 @@ function exibirDados()
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 							<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
 						</svg>
-						Categoria
+						Continuar Comprando
 					</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
-							<a href="/pdv/bebidas.html">Bebidas</a>
-						</li>
-						<li>
-							<a href="/pdv/padaria.html">Café da Manhã/Padaria</a>
-						</li>
-						<li>
-							<a href="/pdv/carnesfrios.html">Carnes e Frios</a>
-						</li>
-						<li>
-							<a href="/pdv/frutas_legumes.html">Frutas e Legumes</a>
-						</li>
-						<li>
-							<a href="/pdv/higienepessoal.html">Higiene pessoal</a>
-						</li>
-						<li>
-							<a href="/pdv/mercearia.html">Mercearia em geral e Enlatados</a>
-						</li>
-						<li>
-							<a href="/pdv/limpeza.html">Produtos de limpeza e Utilidades</a>
-						</li>
-						<li>
-							<a href="/pdv/pet.html">Pet</a>
+							<form action="listartodos" method="post">
+								<button class="btn btn-secondary" type="submit">Compre mais!</button>
+							</form>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="./promo.php">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-percent" viewBox="0 0 16 16">
-							<path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-						</svg>
-						Promoções
-					</a>
 				</li>
 			</ul>
 		</nav>
@@ -109,22 +84,22 @@ function exibirDados()
 			<div>
 				<nav class="navbar " id="navbar">
 					<ul class="nav justify-content-center">
-						<form class="d-flex">
-							<input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+						<form class="d-flex" method="post" action="CONSULTARPROD">
+							<input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" name="cons_prod">
 							<button class="btn btn-outline-success" type="submit">Pesquisar</button>
 						</form>
 					</ul>
 					<div class="navbar">
-          <button type="button" class="btn btn-outline-primary">
-            <?php
-            exibirDados();
-            ?>
-            </a>
-          </button>
-        </div>
+						<button type="button" class="btn btn-outline-primary">
+							<?php
+							exibirDados();
+							?>
+							</a>
+						</button>
+					</div>
 				</nav>
 			</div>
-			<link rel="stylesheet" type="text/css" href="/style.css">
+			<link rel="stylesheet" type="text/css" href="./style.css">
 			<div class="container">
 				<div class="cart-container">
 					<header>
@@ -135,20 +110,24 @@ function exibirDados()
 							<tr>
 								<th>código</th>
 								<th>Nome</th>
+								<th>Categoria</th>
 								<th>Preço</th>
 								<th>Quantidade</th>
 								<th>SubTotal</th>
+								<th>Ação</th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody class="table">
 							<?php foreach ($itensCarrinho as $item) : ?>
 								<tr>
 									<td><?php echo $item->getProduto()->getCodigo(); ?></td>
 									<td><?php echo $item->getProduto()->getNome(); ?></td>
+									<td><?php echo $item->getProduto()->getCategoria();  ?></td>
 									<td>R$ <?php echo number_format($item->getProduto()->getPreco(), 2, ',', '.'); ?></td>
 									<td>
 										<form action="CarrinhoAltQuant" method="post">
 											<input type="hidden" name="id" value="<?php echo $item->getProduto()->getCodigo(); ?>">
+											<input type="hidden" name="nomeProd" value="<?php echo $item->getProduto()->getNome(); ?>">
 											<input type="text" name="quantidade" value="<?php echo $item->getQuantidade(); ?>" size="2">
 											<button type="submit" class="btn btn-primary btn-xs">Alterar</button>
 										</form>
@@ -166,17 +145,17 @@ function exibirDados()
 						<tfoot>
 							<tr>
 								<td colspan="4"><b>Total</b></td>
+								<td></td>
 								<td>R$ <?php echo number_format($carrinho->getTotal(), 2, ',', '.'); ?></td>
+							<form action="PAGAMENTO" method="post">
+								<input type="hidden" name="id" value="<?php echo number_format($carrinho->getTotal(), 2, ',', '.'); ?>">
+								<td><button class="btn btn-success" type="submit">Finalizar</button></td>
+							</form>
 							</tr>
 						</tfoot>
 					</table>
-
-
 				</div>
-
 			</div>
-
-
 			<!--rodapé-->
 			<hr>
 			<hr>

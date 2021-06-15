@@ -4,34 +4,37 @@ class ProdutoModel{
     private $codigo;
     private $nome;
     private $preco;
-    private $descricao;
+    private $imagem;
+    private $categoria;
    
 
     // MÉTODOS GETTERS PARA O CLIENTE
     public function getCodigo(){ return $this->codigo;}
     public function getNome(){ return $this->nome; }
     public function getPreco(){ return $this->preco; }
-    public function getDescricao(){ return $this->descricao; }
+    public function getImagem(){ return $this->imagem; }
+    public function getCategoria(){ return $this->categoria; }
 
     // MÉTODOS SETTERS PARA O CLIENTE
     public function setCodigo($codigo){$this->codigo = $codigo;}
     public function setNome($nome){ $this->nome = $nome;}
     public function setPreco($preco){ $this->preco = $preco;}
-    public function setDescricao($descricao){ $this->descricao = $descricao;}   
+    public function setImagem($imagem){ $this->imagem = $imagem;} 
+    public function setCategoria($categoria){ $this->categoria = $categoria;}  
 
     public function listarTodos(){
         $produto = new ProdutoDAO();
-        $produto->listarTodos();
+        return $produto->listarTodos();
     }
 
     public function pesquisarProd(){
         $produto = new ProdutoDAO();
         $produto->pesquisarProd($this);
     }
-    
-    public function listaProdModel(){
+
+    public function consultarProd(){
         $produto = new ProdutoDAO();
-        $produto->listaProdDAO($this);
+       return $produto->consultarProd($this);
     }
 }
 ?>

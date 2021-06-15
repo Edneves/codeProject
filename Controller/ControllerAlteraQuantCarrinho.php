@@ -18,7 +18,7 @@ class ControladorAlteraQuantCarrinho implements IControlador{
             //atualiza o itemCarrinho no carrinho
             $this->carrinhoSession->atualizar($itemCarrinho);
         }
-        header('Location:CarrinhoModel', true,302);
+        header('Location:Carrinho', true,302);
 
      }
 

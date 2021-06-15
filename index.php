@@ -22,10 +22,10 @@ if (isset($_GET['url'])) {
             $controlador = new AcessoController();
             $controlador->processaRequisicao();
             break;
-        case "VIEWS/LISTARPRODUTO":
+        case "VIEWS/LISTARTODOS":
             require "Controller/ProdutoController.php";
             $controlador = new ProdutoController();
-            $controlador->prodBedidas();
+            $controlador->processaRequisicao();
             break;
         case "VIEWS/ADDITEMCARRINHO":
             require "Controller/ControllerAddItemCarrinho.php";
@@ -34,28 +34,42 @@ if (isset($_GET['url'])) {
             $controlador = new ControladorAddItemCarrinho($carrinhoSession);
             $controlador->processaRequisicao();
             break;
-        case "CARRINHO":
-            require "Controller/ControllerAlteraQuantCarrinho.php";
+        case "VIEWS/CARRINHO":
+            require "Controller/ControllerListaCarrinho.php";
             $controlador = new ControladorListaCarrinho();
             $controlador->processaRequisicao();
             break;
-
-        case "CARRINHOALTQUANT":
+        case "VIEWS/CONSULTARPROD":
+            require "Controller/ProdutoController.php";
+            $controlador = new ProdutoController();
+            $controlador->consultarProd();
+            break;
+        case "VIEWS/CARRINHOALTQUANT":
             require "Controller/ControllerAlteraQuantCarrinho.php";
             $carrinhoSession = new CarrinhoSession();
             $controlador = new ControladorAlteraQuantCarrinho($carrinhoSession);
             $controlador->processaRequisicao();
             break;
-        case "APAGAITEMCARRINHO":
+        case "VIEWS/APAGAITEMCARRINHO":
             require "Controller/ControllerApagaItenCarrinho.php";
             require_once 'models/CarrinhoSession.php';
             $carrinhoSession = new CarrinhoSession();
             $controlador = new ControladorApagaItemCarrinho($carrinhoSession);
             $controlador->processaRequisicao();
             break;
+        case "VIEWS/PAGAMENTO":
+            require "Controller/PagamentoController.php";
+            $controlador = new PagamentoController();
+            $controlador->processaRequisicao();
+            break;
+        case "VIEWS/ARMAZENAR":
+            require "Controller/ResgistrarController.php";
+            $controlador = new RegistroController();
+            $controlador->processaRequisicao();
+            break;
         default:
-            require "Controller/ControllerProdutoListar.php";
-            $controlador = new ControladorProdutoListar();
+            require "Controller/HomeController.php";
+            $controlador = new ControladorHome();
             $controlador->processaRequisicao();
             break;
     }

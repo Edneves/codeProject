@@ -16,14 +16,14 @@ class ItemCarrinho{
     public function getQuantidade(){
         return $this->quantidade;
     }
+    public function getSubTotal(){
+        return $this->produto->getPreco() * $this->quantidade;
+    }
     public function setProduto($produto){
         $this->produto = $produto;
     }
     public function setquantidade($quantidade){
         $this->quantidade = $quantidade;
-    }
-    public function subTotal(){
-        return $this->produto->getPreco() * $this->quantidade;
     }
 }
 ?>

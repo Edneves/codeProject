@@ -11,10 +11,14 @@ class ControladorListaCarrinho implements IControlador{
     }
 
     public function processaRequisicao(){
-        
-        $itensCarrinho = $this->carrinho->getItensCarrinho();
-        $carrinho = $this->carrinho;
-        require "views/ListarCarrinho.php";
+        if(!empty($_SESSION['id']) == true){
+            $itensCarrinho = $this->carrinho->getItensCarrinho();
+            $carrinho = $this->carrinho;
+            require "views/ListaCarrinho.php";
+        }
+        else{
+            require "views/login.php";
+        }
     }
 }
     

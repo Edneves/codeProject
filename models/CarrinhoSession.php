@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "iCarrinhoModel.php";
 require_once "ItemCarrinhoModel.php";
 
@@ -15,7 +16,7 @@ class CarrinhoSession implements ICarrinho{
 
     public function adicionar($item){
         $id = $item->getProduto()->getCodigo();
-        if ($this->estaNoCarrinho($id))
+        if (!$this->estaNoCarrinho($id))
             $this->itens[$id] = $item;
         else
             $this->itens[$id]->setQuantidade($this->itens[$id]->getQuantidade()+1);    
