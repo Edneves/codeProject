@@ -34,7 +34,7 @@
             <div class="py-5 text-center">
                 <h2>Formulário de Pagamento</h2>
             </div>
-            <form class="needs-validation" novalidate action="ARMAZENAR" method="post">
+            <form class="needs-validation" action="ARMAZENAR" method="post">
                 <div class="row g-5">
                     <div class="col-md-5 col-lg-4 order-md-last">
                         <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
                         <hr class="my-4">
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Finalizar a compra</button>
+                        <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="alert('Compra realizada com sucesso!')">Finalizar a compra</button>
             </form>
     </div>
     </div>

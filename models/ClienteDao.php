@@ -21,10 +21,11 @@ class ClienteDAO{
           $senha = $cliente->getSenha(); 
           $sql->execute();
           //echo $conexao;
-       } catch (PDOException $e) {
+         } catch (PDOException $e) {
           echo "ERRO AO CADASTRAR OS DADOS". $e->getMessage();
           return 0;
-       }
+         }
+         $sql = null;
    }
 
    public function pesquisaClienteDAO(){
@@ -53,21 +54,23 @@ class ClienteDAO{
       catch (PDOException $e) {
          return array();
       }
+      $sql = null;
    }
 
-   public function excluirClienteDAO($cliente){
-      try{
-         $conexao = Conexao::getConexao();
-         $sql = $conexao->prepare("delete from projetoWeb.cliente where cpf=:cpf");
-         $sql->bindParam("cpf", $cpf);
-         $cpf = $cliente->getCpf();
-         $sql->execute();
-      } 
-      catch(PDOException $err){
-         echo "ERRO AO EXCLUIR OS DADOS: ".$err->getmessage();
-         exit();
-      }
-   }
+   // public function excluirClienteDAO($cliente){
+   //    try{
+   //       $conexao = Conexao::getConexao();
+   //       $sql = $conexao->prepare("delete from projetoWeb.cliente where cpf=:cpf");
+   //       $sql->bindParam("cpf", $cpf);
+   //       $cpf = $cliente->getCpf();
+   //       $sql->execute();
+   //    } 
+   //    catch(PDOException $err){
+   //       echo "ERRO AO EXCLUIR OS DADOS: ".$err->getmessage();
+   //       exit();
+   //    }
+   //    $sql = null;
+   // }
 
    public function validarDadosDAO($cliente){
       try{      
@@ -89,6 +92,7 @@ class ClienteDAO{
       catch(PDOException $e){
          echo "ERRO AO CONSULTAR O EMAIL". $e;
       }
+      $sql = null;
    }
 }
 

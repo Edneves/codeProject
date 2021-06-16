@@ -28,7 +28,8 @@ class CartaoDAO{
           } catch (PDOException $e) {
              echo "ERRO AO GRAVAR OS DADOS". $e->getMessage();
              return 0;
-          }
+        }
+        $sql = null;
     }
 }
 

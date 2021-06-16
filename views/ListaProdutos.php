@@ -4,7 +4,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 }
 function exibirDados()
 {
-  if ($_SESSION['id'] == true) {
+  if (!empty($_SESSION['id'])) {
     echo "*.*";
   } else {
     echo '<a href="./home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -139,7 +139,7 @@ function exibirDados()
                       <p class="card-text"><?php echo $lista->getNome(); ?></p>
                       <form action="ADDITEMCARRINHO" method="post">
                         <input type="hidden" name="id" value="<?php echo $lista->getCodigo(); ?>">
-                        <input type="submit" class="btn btn-outline-primary" value="Adicionar ao Carrinho" onclick="alert('O item: <?php echo $lista->getNome(); ?>, será adicionado ao Carrinho!')">
+                        <input type="submit" class="btn btn-outline-primary" value="Adicionar ao Carrinho" >
                       </form>
                     </div>
                   </div>

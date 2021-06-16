@@ -42,14 +42,12 @@ class ProdutoDAO
             $codigo = $prod->getCodigo();
             
             $sql->execute();
-          
             $result = $sql->setFetchMode(PDO::FETCH_ASSOC);
             while ($linha = $sql->fetch(PDO::FETCH_ASSOC)) {
                 $prod->setCodigo($linha['codigo']);
                 $prod->setNome($linha['nome']);
                 $prod->setPreco($linha['preco']);
                 $prod->setCategoria($linha['nomeCategoria']);
-               
             }
         
         } catch (PDOException $e) {
@@ -61,7 +59,7 @@ class ProdutoDAO
     public function consultarProd($prod){
         try {
             $conexao = Conexao::getConexao();
-            $sql = $conexao->prepare("select * from produto as a where a.nome like '%:nome%'");
+            $sql = $conexao->prepare("select * from produto where nome = :nome");
             $sql->bindParam("nome", $nome);
             $nome = $prod->getNome();
             

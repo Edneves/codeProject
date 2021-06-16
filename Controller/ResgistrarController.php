@@ -21,13 +21,14 @@ class RegistroController implements IControlador{
            $this->dados->setCvvCartao($_POST['cc-cvv']); 
            $this->dados->setValorCompra($_POST['valor']); 
            $this->dados->setIdCliente((int)$_SESSION['id']);
-           $this->dados->setDiaCompra("10/10/2020");
+           $this->dados->setDiaCompra((String) date("d/m/Y H:i:s"));
             
            $this->dados->registraCompra();
+           $_SESSION['id'] = null;
            header('Location:home.php');
         }
         else{
-            echo "Não foram enviados dados";
+            header('Location:Pagamento');
         }
     }
 }

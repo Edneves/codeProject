@@ -5,7 +5,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 function exibirDados()
 {
 	if (!empty($_SESSION['id'])) {
-		echo $_SESSION['id'];
+		echo "(*.*)";
 	} else {
 		echo '<a href="./home.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -105,7 +105,7 @@ function exibirDados()
 					<header>
 						<h3>Carrinho de Compras</h3>
 					</header>
-					<table class="table table-striped">
+					<table class="table table-hover table-striped">
 						<thead>
 							<tr>
 								<th>código</th>
@@ -129,7 +129,7 @@ function exibirDados()
 											<input type="hidden" name="id" value="<?php echo $item->getProduto()->getCodigo(); ?>">
 											<input type="hidden" name="nomeProd" value="<?php echo $item->getProduto()->getNome(); ?>">
 											<input type="text" name="quantidade" value="<?php echo $item->getQuantidade(); ?>" size="2">
-											<button type="submit" class="btn btn-primary btn-xs">Alterar</button>
+											<button type="submit" class="btn btn-warning btn-xs">Alterar</button>
 										</form>
 									</td>
 									<td>R$ <?php echo number_format($item->getSubTotal(), 2, ',', '.'); ?></td>
