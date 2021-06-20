@@ -1,5 +1,5 @@
 <?php
-require "ProdutoDAO.php";
+require_once "DAO/ProdutoDAO.php";
 class ProdutoModel{
     private $codigo;
     private $nome;
@@ -27,6 +27,52 @@ class ProdutoModel{
         return $produto->listarTodos();
     }
 
+     //listar bebidas
+     public function listarBebidas(){
+        $produto = new ProdutoDAO();
+        return $produto->listarBebidas();
+    }
+    //lista carnes e frio
+    public function listarCarne(){
+        $produto = new ProdutoDAO();
+        return $produto->listarCarne();
+    }
+    //lista frutas
+    public function listarFrutas(){
+        $produto = new ProdutoDAO();
+        return $produto->listarFrutas();
+    }
+    //Lista higiene
+    public function listarHigiene(){
+        $produto = new ProdutoDAO();
+        return $produto->listarHigiene();
+    }
+    //hort
+    public function listarHort(){
+        $produto = new ProdutoDAO();
+        return $produto->listarHort();
+    }
+    //limpeza
+    public function listarLimpeza(){
+        $produto = new ProdutoDAO();
+        return $produto->listarLimpeza();
+    }
+    //mercearia
+    public function listarMercearia(){
+        $produto = new ProdutoDAO();
+        return $produto->listarMercearia();
+    }
+    //padaria
+    public function listarPadaria(){
+        $produto = new ProdutoDAO();
+        return $produto->listarPadaria();
+    }
+    //pet
+    public function listarPet(){
+        $produto = new ProdutoDAO();
+        return $produto->listarPet();
+    }
+
     public function pesquisarProd(){
         $produto = new ProdutoDAO();
         $produto->pesquisarProd($this);
@@ -35,6 +81,11 @@ class ProdutoModel{
     public function consultarProd(){
         $produto = new ProdutoDAO();
        return $produto->consultarProd($this);
+    }
+
+    public function listarCarrinho(){
+        $produto = new ProdutoDAO();
+        return $produto->produtoCarrinho();
     }
 }
 ?>

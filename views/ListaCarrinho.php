@@ -126,6 +126,7 @@ function exibirDados()
 									<td>R$ <?php echo number_format($item->getProduto()->getPreco(), 2, ',', '.'); ?></td>
 									<td>
 										<form action="CarrinhoAltQuant" method="post">
+											<input type="hidden" name="qtdProduto" value="<?php echo $item->getQuantidade(); ?>">
 											<input type="hidden" name="id" value="<?php echo $item->getProduto()->getCodigo(); ?>">
 											<input type="hidden" name="nomeProd" value="<?php echo $item->getProduto()->getNome(); ?>">
 											<input type="text" name="quantidade" value="<?php echo $item->getQuantidade(); ?>" size="2">
@@ -147,10 +148,12 @@ function exibirDados()
 								<td colspan="4"><b>Total</b></td>
 								<td></td>
 								<td>R$ <?php echo number_format($carrinho->getTotal(), 2, ',', '.'); ?></td>
-							<form action="PAGAMENTO" method="post">
-								<input type="hidden" name="id" value="<?php echo number_format($carrinho->getTotal(), 2, ',', '.'); ?>">
-								<td><button class="btn btn-success" type="submit">Finalizar</button></td>
-							</form>
+								<form action="GRAVARPRODUTOS" method="post">
+									<input type="hidden" name="ValorCompra" value="<?php echo $carrinho->getTotal(); ?>">
+									<input type="hidden" name="nomeProd" value="<?php echo $item->getProduto()->getNome(); ?>">
+									<input type="hidden" name="total" value="<?php echo number_format($carrinho->getTotal(), 2, ',', '.'); ?>">
+									<td><button class="btn btn-success" type="submit">Finalizar</button></td>
+								</form>
 							</tr>
 						</tfoot>
 					</table>

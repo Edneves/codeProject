@@ -1,6 +1,7 @@
 <?php
 
 class Conexao{
+	
 	public static function getConexao(){
 	    $dbName = "projetoWeb";
 		$userName = "root";

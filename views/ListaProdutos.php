@@ -138,6 +138,7 @@ function exibirDados()
                       </h5>
                       <p class="card-text"><?php echo $lista->getNome(); ?></p>
                       <form action="ADDITEMCARRINHO" method="post">
+                      <input type="hidden" name="nomeProduto" value="<?php echo $lista->getNome(); ?>">
                         <input type="hidden" name="id" value="<?php echo $lista->getCodigo(); ?>">
                         <input type="submit" class="btn btn-outline-primary" value="Adicionar ao Carrinho" >
                       </form>

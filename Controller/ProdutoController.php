@@ -1,7 +1,7 @@
 <?php
 
-require "models/ProdutoModel.php";
-require "IControlador.php";
+require_once "models/ProdutoModel.php";
+require_once "IControlador.php";
 class ProdutoController implements IControlador
 {
     private $produto;
@@ -34,4 +34,6 @@ class ProdutoController implements IControlador
             header('Location:LISTARTODOS');
         }
     }
+
+    
 }

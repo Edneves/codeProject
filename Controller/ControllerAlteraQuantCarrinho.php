@@ -12,6 +12,9 @@ class ControladorAlteraQuantCarrinho implements IControlador{
      }
 
      public function processaRequisicao(){
+         if(!empty($_POST['qtdProduto'])){
+                 $_SESSION['qtdProduto'] = $_POST['qtdProduto'] ;
+         }
         if (isset($_POST['id']) && preg_match("/^[0-9]+/",$_POST['id'])) {
             //cria o objeto itemCarrinho
             $itemCarrinho = new ItemCarrinho($_POST['id'],$_POST['quantidade']);

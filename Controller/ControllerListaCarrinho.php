@@ -20,7 +20,5 @@ class ControladorListaCarrinho implements IControlador{
             require "views/login.php";
         }
     }
-}
-    
-    
+}   
 ?>

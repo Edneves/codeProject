@@ -1,43 +1,39 @@
 <?php
-require_once "DAO/ClienteDao.php";
-class ClienteModel{
+require_once "DAO/UsuarioDAO.php";
+class UsuarioModel{
     private $nome;
-    private $cpf;
+    private $matricula;
     private $endereco;
     private $email;
     private $senha;
 
     // MÉTODOS GETTERS PARA O CLIENTE
     public function getNome(){ return $this->nome; }
-    public function getCpf(){ return $this->cpf; }
+    public function getMatricula(){ return $this->matricula; }
     public function getEndereco(){ return $this->endereco; }
     public function getEmail(){ return $this->email; }
     public function getSenha(){ return $this->senha; }
 
     // MÉTODOS SETTERS PARA O CLIENTE
     public function setNome($nome){ $this->nome = $nome;}
-    public function setCpf($cpf){ $this->cpf = $cpf;}
+    public function setMatricula($matricula){ $this->matricula = $matricula;}
     public function setEndereco($endereco){ $this->endereco = $endereco; }
     public function setEmail($email){ $this->email = $email; }
     public function setSenha($senha){ $this->senha = $senha; }
 
-    public function insereClienteModel(){
-        $clienteDAO = new ClienteDAO();
-        $clienteDAO->inserirClienteDAO($this);
+    public function insereUsuarioModel(){
+        $usuarioDAO = new UsuarioDAO();
+        $usuarioDAO->inserirUsuarioDAO($this);
     }
 
-    public function pesquisaCliente(){
-        $clienteDAO = new ClienteDAO();
-        $clienteDAO->pesquisaClienteDAO();
+    public function pesquisaUsuario(){
+        $usuarioDAO = new UsuarioDAO();
+        $usuarioDAO->pesquisaUsuarioDAO();
     }
 
-    // public function excluirCliente(){
-    //     $clienteDAO = new ClienteDAO();
-    //     $clienteDAO->excluirClienteDAO($this);
-    // }
 
     public function validarDados(){
-        $email = new ClienteDAO();
+        $email = new UsuarioDAO();
         $email->validarDadosDAO($this);
     }
 }

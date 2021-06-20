@@ -17,6 +17,16 @@ if (isset($_GET['url'])) {
             $controlador = new ClienteController();
             $controlador->sairDoSistema();
             break;
+        case "VIEWS/PROCESSAUSUARIO":
+            require "Controller/UsuarioController.php";
+            $controlador = new UsuarioController();
+            $controlador->processaRequisicao();
+            break;
+        case "VIEWS/PROCESSAUSUARIO1":
+            require "Controller/UsuarioController.php";
+            $controlador = new UsuarioController();
+            $controlador->validarUsuario();
+            break;
         case "VIEWS/ACESSOCARRINHO":
             require "Controller/AcessoController.php";
             $controlador = new AcessoController();
@@ -57,14 +67,14 @@ if (isset($_GET['url'])) {
             $controlador = new ControladorApagaItemCarrinho($carrinhoSession);
             $controlador->processaRequisicao();
             break;
-        case "VIEWS/PAGAMENTO":
-            require "Controller/PagamentoController.php";
-            $controlador = new PagamentoController();
-            $controlador->processaRequisicao();
-            break;
         case "VIEWS/ARMAZENAR":
             require "Controller/ResgistrarController.php";
             $controlador = new RegistroController();
+            $controlador->processaRequisicao();
+            break;
+        case "VIEWS/GRAVARPRODUTOS":
+            require "Controller/GravarProdutosController.php";
+            $controlador = new GravaProdutosController();
             $controlador->processaRequisicao();
             break;
         default:

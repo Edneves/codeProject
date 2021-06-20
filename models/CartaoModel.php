@@ -1,5 +1,5 @@
 <?php
-require "CartaoDAO.php";
+require_once "DAO/CartaoDAO.php";
 class CartaoModel{
     private $nomeCartao;
     private $numeroCartao;
