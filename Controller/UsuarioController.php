@@ -28,16 +28,6 @@ class UsuarioController implements IControlador
         header('Location: loginAdm.php', true, 302);
     }
 
-    // public function pequisausuarios(){
-    //     $lista = $this->usuario->pesquisausuario();
-    //     require "ListarProduto.php";
-    // }
-
-    // public function excluirusuarioController(){
-    //     $this->usuario->setCpf($_POST['cpf']);
-    //     $this->usuario->excluirusuario();
-    //     header('Location:home.php', true, 302);
-    // }
 
     public function validarUsuario()
     {

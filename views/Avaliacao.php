@@ -13,7 +13,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
         <link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<h1 class="text-center">Avalie sua Compra!</h1>
+		<h1>Avalie sua Compra!</h1>
 		<?php
 		if(isset($_SESSION['msg'])){
 			echo $_SESSION['msg']."<br><br>";
@@ -21,7 +21,7 @@ if (session_status() != PHP_SESSION_ACTIVE) {
 		}
 		?>
 		<form method="POST" action="AVALIAR" enctype="multipart/form-data">
-			<div class="estrelas text-center" >
+			<div class="estrelas" >
 				<input type="radio" id="vazio" name="estrela" value="" checked>
 				
 				<label for="estrela_um"><i class="fa"></i></label>

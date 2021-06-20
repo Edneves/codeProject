@@ -31,11 +31,6 @@ class ClienteModel{
         $clienteDAO->pesquisaClienteDAO();
     }
 
-    // public function excluirCliente(){
-    //     $clienteDAO = new ClienteDAO();
-    //     $clienteDAO->excluirClienteDAO($this);
-    // }
-
     public function validarDados(){
         $email = new ClienteDAO();
         $email->validarDadosDAO($this);

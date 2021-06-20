@@ -27,17 +27,6 @@ class ClienteController implements IControlador
         header('Location: login.php', true, 302);
     }
 
-    // public function pequisaClientes(){
-    //     $lista = $this->cliente->pesquisaCliente();
-    //     require "ListarProduto.php";
-    // }
-
-    // public function excluirClienteController(){
-    //     $this->cliente->setCpf($_POST['cpf']);
-    //     $this->cliente->excluirCliente();
-    //     header('Location:home.php', true, 302);
-    // }
-
     public function validarUsuario()
     {
         if (!empty($_POST['email_login']) && !empty($_POST['senha_login'])) {
@@ -46,7 +35,7 @@ class ClienteController implements IControlador
             $this->cliente->validarDados();
             
             if (!empty($_SESSION['id'])) {
-                $_SESSION['idCarrinho'] = uniqid();
+                $_SESSION['id'] = uniqid();
                 
                header('Location: home.php');
             } else {

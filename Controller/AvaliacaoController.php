@@ -6,16 +6,15 @@ include_once "Database/conexao.php";
 class AvaliacaoController{
     public function processaRequisicao(){
         if(!empty($_POST['estrela'])){
-            $estrela = $_POST['estrela'];
             try{
                 $conexao = Conexao::getConexao();
                 if($conexao != null){
-                    $sql = $conexao->prepare("insert into avaliacao(qtd_estrela, idCompra, created) values(:estrela, :idCompra, now())");
+                    $sql = $conexao->prepare("insert into avaliacao(idCompra, qtd_estrela) values( :idCompra, :estrela)");
                     $sql->bindParam("estrela", $estrela);
                     $sql->bindParam("idCompra", $idCompra);
             
-                    $estrela = $_POST['estrela'];
-                    $idCompra = $_POST['idCompra'];
+                    $estrela = (int)$_POST['estrela'];
+                    $idCompra = (int)$_SESSION['idCarrinho'];
             
                     $sql->execute();
         

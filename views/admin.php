@@ -150,20 +150,21 @@ function exibirDados()
             <div class="col-sm-3">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-text"><?php echo $lista->getQtd(); ?></p>
-                  '<img class="card-img-top" src="img/imgPages/<?php echo $lista->getImagem(); ?>" alt="" width="200" height="200" />'
+                  <p class="card-text"><?php echo $lista->getNome(); ?></p>
+                  <img class="card-img-top" src="img/imgPages/<?php echo $lista->getImagem(); ?>" alt="" width="200" height="200" />'
                   <h5 class="card-title">
                     <h6>Valor R$ <?php echo number_format($lista->getPreco(), 2, ',', '.'); ?></h6>
-                    <h6>Quantidade </h6>
+                    <h6>Quantidade <?php echo $lista->getQtd(); ?></h6>
                   </h5>
                   <form action="MODIFICARESTOQUE" method="post">
+                  <input type="hidden" name="valor" value="<?php echo number_format($lista->getPreco(), 2, ',', '.'); ?>">
                     <input type="hidden" name="nomeProduto" value="<?php echo $lista->getNome(); ?>">
-                    <input type="hidden" name="id" value="<?php echo $lista->getCodigo(); ?>">
+                    <input type="hidden" name="idProduto" value="<?php echo $lista->getCodigo(); ?>">
                     <div class="text-center">
                       <input type="submit" class="btn btn-outline-secondary" value="Alterar Quantidade" size="5">
                       <input type="text" name="qtd" id="" size="1">
                       <input type="submit" class="btn btn-outline-secondary" value="Alterar Valor" size="5">
-                      <input type="text" name="preço" id="" size="1">
+                      <input type="text" name="preco" id="" size="1">
                     </div>
                   </form>
                 </div>

@@ -87,6 +87,11 @@ if (isset($_GET['url'])) {
             $controlador = new EstoqueController();
             $controlador->processaRequisicao();
             break;
+        case "VIEWS/MODIFICARESTOQUE":
+            require "Controller/ModificarEstoqueController.php";
+            $controlador = new ModificarEstoqueController();
+            $controlador->processaRequisicao();
+            break;
         default:
             require "Controller/HomeController.php";
             $controlador = new ControladorHome();
