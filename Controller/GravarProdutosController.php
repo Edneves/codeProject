@@ -43,33 +43,6 @@ class GravaProdutosController implements IControlador
       echo "ERRO AO CRIAR CARRINHO: " . $e;
     }
     
-    //cho $_POST['valorCompra'];
     
- 
-    
-    
-    //ADICIONAR PRODUTOS AO CARRINHO
-    // try {
-    //   $conexao = Conexao::getConexao();
-    //   $sql = $conexao->prepare("
-    //   update carrinho as car
-    //   left join cliente as cli
-    //   on car.idCliente = cli.id
-    //   set car.nProd = :nProd
-    //   and qtdProduto = :qtdProd
-    //     where car.idCliente = :id)");
-    // // $sql->bindParam("id", $_SESSION['id']);
-    //  $sql->bindParam("nProd", $_SESSION['nomeProduto']);
-    //  $sql->bindParam("qtdProd",$_SESSION['qtdProduto']);
-
-    //   // foreach ($itensCarrinho as $item) {
-    //   //   $nProd = ;
-    //   //   // $nProd = $item->getProduto()->getNome();
-    //   //   $qtdProd = $item->getQuantidade();
-    //   //   $sql->execute();
-    //   // }
-    // } catch (PDOException $e) {
-    //   echo "ERRO AO CRIAR CARRINHO: " . $e;
-    // }
   }
 }
