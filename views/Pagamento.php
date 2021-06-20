@@ -33,6 +33,12 @@
             <main>
                 <div class="py-5 text-center">
                     <h2>Formulário de Pagamento</h2>
+                    <?php
+                    if (isset($_SESSION['msgPagamento'])) {
+                        echo $_SESSION['msgPagamento'] . "<br><br>";
+                        unset($_SESSION['msgPagamento']);
+                    }
+                    ?>
                 </div>
                 <form class="needs-validation" action="ARMAZENAR" method="post">
                     <div class="row g-5">
@@ -40,7 +46,7 @@
                             <h4 class="d-flex justify-content-between align-items-center mb-3">
                                 <span class="text-primary">Valor da Compra </span>
                             </h4>
-                         
+
                             <ul class="list-group mb-3">
                                 <li class="list-group-item d-flex justify-content-between">
                                     <h5>Total R$ <?php echo $valorTotal; ?></h5>

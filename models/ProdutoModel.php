@@ -6,6 +6,7 @@ class ProdutoModel{
     private $preco;
     private $imagem;
     private $categoria;
+    private $qtd;
    
 
     // MÉTODOS GETTERS PARA O CLIENTE
@@ -14,6 +15,7 @@ class ProdutoModel{
     public function getPreco(){ return $this->preco; }
     public function getImagem(){ return $this->imagem; }
     public function getCategoria(){ return $this->categoria; }
+    public function getQtd() { return $this->qtd; }
 
     // MÉTODOS SETTERS PARA O CLIENTE
     public function setCodigo($codigo){$this->codigo = $codigo;}
@@ -21,56 +23,11 @@ class ProdutoModel{
     public function setPreco($preco){ $this->preco = $preco;}
     public function setImagem($imagem){ $this->imagem = $imagem;} 
     public function setCategoria($categoria){ $this->categoria = $categoria;}  
+    public function setQtd($qtd){ $this->qtd = $qtd; }
 
     public function listarTodos(){
         $produto = new ProdutoDAO();
         return $produto->listarTodos();
-    }
-
-     //listar bebidas
-     public function listarBebidas(){
-        $produto = new ProdutoDAO();
-        return $produto->listarBebidas();
-    }
-    //lista carnes e frio
-    public function listarCarne(){
-        $produto = new ProdutoDAO();
-        return $produto->listarCarne();
-    }
-    //lista frutas
-    public function listarFrutas(){
-        $produto = new ProdutoDAO();
-        return $produto->listarFrutas();
-    }
-    //Lista higiene
-    public function listarHigiene(){
-        $produto = new ProdutoDAO();
-        return $produto->listarHigiene();
-    }
-    //hort
-    public function listarHort(){
-        $produto = new ProdutoDAO();
-        return $produto->listarHort();
-    }
-    //limpeza
-    public function listarLimpeza(){
-        $produto = new ProdutoDAO();
-        return $produto->listarLimpeza();
-    }
-    //mercearia
-    public function listarMercearia(){
-        $produto = new ProdutoDAO();
-        return $produto->listarMercearia();
-    }
-    //padaria
-    public function listarPadaria(){
-        $produto = new ProdutoDAO();
-        return $produto->listarPadaria();
-    }
-    //pet
-    public function listarPet(){
-        $produto = new ProdutoDAO();
-        return $produto->listarPet();
     }
 
     public function pesquisarProd(){

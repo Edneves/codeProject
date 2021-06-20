@@ -86,11 +86,11 @@ function exibirDados()
       <div class="card text-center">
         <div class="card-header">
           <ul class="nav nav-tabs card-header-tabs">
-            
-              <a class="nav-link active" href="/pdv/bebidas.html">
-                <h1 style="justify-content: center;">Status compra</h1>
-              </a>
-            
+
+            <a class="nav-link active" href="/pdv/bebidas.html">
+              <h1 style="justify-content: center;">Status compra</h1>
+            </a>
+
           </ul>
         </div>
         <div class="card-body">
@@ -140,429 +140,38 @@ function exibirDados()
           </div>
         </div>
       </div>
-
-      <!--teste-->
       <br>
-      <!--produtos-->
-      <div class="card text-center">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="/promo.html">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <!--container pages-->
-            <div class="container container-fluid">
-              <div class="row">
-
-                <!--corpo page-->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-4">
+      <br>
+      <h1 class="text-center">Estoque</h1>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <?php foreach ($listaprod as $lista) { ?>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text"><?php echo $lista->getQtd(); ?></p>
+                  '<img class="card-img-top" src="img/imgPages/<?php echo $lista->getImagem(); ?>" alt="" width="200" height="200" />'
+                  <h5 class="card-title">
+                    <h6>Valor R$ <?php echo number_format($lista->getPreco(), 2, ',', '.'); ?></h6>
+                    <h6>Quantidade </h6>
+                  </h5>
+                  <form action="MODIFICARESTOQUE" method="post">
+                    <input type="hidden" name="nomeProduto" value="<?php echo $lista->getNome(); ?>">
+                    <input type="hidden" name="id" value="<?php echo $lista->getCodigo(); ?>">
+                    <div class="text-center">
+                      <input type="submit" class="btn btn-outline-secondary" value="Alterar Quantidade" size="5">
+                      <input type="text" name="qtd" id="" size="1">
+                      <input type="submit" class="btn btn-outline-secondary" value="Alterar Valor" size="5">
+                      <input type="text" name="preço" id="" size="1">
                     </div>
-                    <div class="promo">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/desodorante.jfif" alt="Card image cap">
-                              <h5 class="card-title text-center">Desodorante Nívea</h5>
-                              <p class="card-text">Por apenas R$ 9,99.</p>
-                              <form action="listarBebidas" method="post">
-                                <button class="btn btn-outline-secondary" type="imput">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/picanha.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Picanha</h5>
-                              <p class="card-text">O kilo por apenas R$ 78,90.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="card">
-                            <div class="card-body btn-outline">
-                              <img class="card-img-top" src="./img/imgPages/alface.png" alt="Card image cap">
-                              <h5 class="card-title text-center">
-                                Alface
-                              </h5>
-                              <p class="card-text">Venha buscar o seu R$ 1,89.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/cebola_roxa.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Cebola roxa</h5>
-                              <p class="card-text">Somente R$ 4,69 o kg.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
+              <br>
             </div>
-          </div>
-        </div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="/promo.html">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <!--container pages-->
-            <div class="container container-fluid">
-              <div class="row">
-
-                <!--corpo page-->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="promo">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/desodorante.jfif" alt="Card image cap">
-                              <h5 class="card-title text-center">Desodorante Nívea</h5>
-                              <p class="card-text">Por apenas R$ 9,99.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/picanha.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Picanha</h5>
-                              <p class="card-text">O kilo por apenas R$ 78,90.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card">
-                            <div class="card-body btn-outline">
-                              <img class="card-img-top" src="./img/imgPages/alface.png" alt="Card image cap">
-                              <h5 class="card-title text-center">
-                                Alface
-                              </h5>
-                              <p class="card-text">Venha buscar o seu R$ 1,89.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/cebola_roxa.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Cebola roxa</h5>
-                              <p class="card-text">Somente R$ 4,69 o kg.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="/promo.html">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <!--container pages-->
-            <div class="container container-fluid">
-              <div class="row">
-
-                <!--corpo page-->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="promo">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/desodorante.jfif" alt="Card image cap">
-                              <h5 class="card-title text-center">Desodorante Nívea</h5>
-                              <p class="card-text">Por apenas R$ 9,99.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/picanha.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Picanha</h5>
-                              <p class="card-text">O kilo por apenas R$ 78,90.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card">
-                            <div class="card-body btn-outline">
-                              <img class="card-img-top" src="./img/imgPages/alface.png" alt="Card image cap">
-                              <h5 class="card-title text-center">
-                                Alface
-                              </h5>
-                              <p class="card-text">Venha buscar o seu R$ 1,89.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/cebola_roxa.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Cebola roxa</h5>
-                              <p class="card-text">Somente R$ 4,69 o kg.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="/promo.html">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <!--container pages-->
-            <div class="container container-fluid">
-              <div class="row">
-
-                <!--corpo page-->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="promo">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/desodorante.jfif" alt="Card image cap">
-                              <h5 class="card-title text-center">Desodorante Nívea</h5>
-                              <p class="card-text">Por apenas R$ 9,99.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/picanha.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Picanha</h5>
-                              <p class="card-text">O kilo por apenas R$ 78,90.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card">
-                            <div class="card-body btn-outline">
-                              <img class="card-img-top" src="./img/imgPages/alface.png" alt="Card image cap">
-                              <h5 class="card-title text-center">
-                                Alface
-                              </h5>
-                              <p class="card-text">Venha buscar o seu R$ 1,89.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/cebola_roxa.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Cebola roxa</h5>
-                              <p class="card-text">Somente R$ 4,69 o kg.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="/promo.html">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <!--container pages-->
-            <div class="container container-fluid">
-              <div class="row">
-
-                <!--corpo page-->
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-4">
-                    </div>
-                    <div class="promo">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/desodorante.jfif" alt="Card image cap">
-                              <h5 class="card-title text-center">Desodorante Nívea</h5>
-                              <p class="card-text">Por apenas R$ 9,99.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/picanha.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Picanha</h5>
-                              <p class="card-text">O kilo por apenas R$ 78,90.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card">
-                            <div class="card-body btn-outline">
-                              <img class="card-img-top" src="./img/imgPages/alface.png" alt="Card image cap">
-                              <h5 class="card-title text-center">
-                                Alface
-                              </h5>
-                              <p class="card-text">Venha buscar o seu R$ 1,89.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card btn-outline">
-                            <div class="card-body">
-                              <img class="card-img-top" src="./img/imgPages/cebola_roxa.png" alt="Card image cap">
-                              <h5 class="card-title text-center">Cebola roxa</h5>
-                              <p class="card-text">Somente R$ 4,69 o kg.</p>
-                              <form action="listartodos" method="post">
-                                <button class="btn btn-outline-secondary" type="submit">Acessar</button>
-                                <button class="btn btn-outline-secondary" type="imput">Alterar</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <br>
+          <?php } ?>
         </div>
       </div>
       <!--rodapé-->

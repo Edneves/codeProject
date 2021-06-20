@@ -59,7 +59,7 @@ class ClienteController implements IControlador
 
     public function sairDoSistema()
     {
-        $_SESSION['id'] = null;
+        unset($_SESSION['id']);
         header('Location:home.php');
     }
 }

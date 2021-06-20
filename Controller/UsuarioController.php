@@ -47,7 +47,7 @@ class UsuarioController implements IControlador
             $this->usuario->validarDados();
             
             if (!empty($_SESSION['idUsuario'])) {
-               header('Location: admin.php');
+               header('Location: Saudacoes.php');
             } else {
                 header('Location:loginAdm.php');
             }

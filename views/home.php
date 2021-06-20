@@ -76,9 +76,15 @@ function exibirDados()
         </li>
 
         <li>
+          <br>
           <form action="CARRINHO" method="post">
-            <button type="submit" class="btn btn-secondary">Acessar Carrinho</button>
+
+            <button type="submit" class="btn btn-secondary">
+              <a>Acesse o Carrinho</a>
+            </button>
           </form>
+          <br>
+          <a class="btn btn-secondary" href="./loginAdm.php">Seção Administrativa</a>
       </ul>
     </nav>
     <!-- Page Content Holder -->
@@ -102,6 +108,7 @@ function exibirDados()
                 exibirDados();
                 ?>
               </a>
+
             </button>
             <form action="LOGOUT" method="post">
               <button type="submit" class="btn btn-outline-danger">Sair</button>

@@ -94,6 +94,29 @@ class ClienteDAO{
       }
       $sql = null;
    }
+
+   public function bucarCompraDAO($dados){
+      try{      
+         $conexao = Conexao::getConexao();
+         $sql = $conexao->prepare("select * from cliente where email = :email and senha = :senha");
+         $sql->bindValue("email", $dados->getEmail());
+         $sql->bindValue("senha", $dados->getSenha());
+         $sql->execute();
+         
+         if($sql->rowCount()>0){
+            $dado = $sql->fetch(PDO::FETCH_OBJ);
+            $_SESSION['id'] = $dado->id;
+            return true;
+         }
+         else{
+            return false;
+         }
+      }
+      catch(PDOException $e){
+         echo "ERRO AO CONSULTAR O EMAIL". $e;
+      }
+      $sql = null;
+   }
 }
 
 ?>

@@ -25,12 +25,15 @@ class RegistroController implements IControlador{
             
            $this->dados->registraCompra();
 
-          
-           header('Location:home.php');
+           $_SESSION['msg'] = "Pagamento feito com sucesso!";
+           header('Location:Avaliacao.php');
         }
         else{
+            $_SESSION['msg'] = "Erro ao executar o pagamento, consfira os dados!";
             header('Location:Pagamento');
         }
+
+        
     }
 }
 ?>

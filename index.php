@@ -77,6 +77,16 @@ if (isset($_GET['url'])) {
             $controlador = new GravaProdutosController();
             $controlador->processaRequisicao();
             break;
+        case "VIEWS/AVALIAR":
+            require "Controller/AvaliacaoController.php";
+            $controlador = new AvaliacaoController();
+            $controlador->processaRequisicao();
+            break;
+        case "VIEWS/BUSCARESTOQUE":
+            require "Controller/EstoqueController.php";
+            $controlador = new EstoqueController();
+            $controlador->processaRequisicao();
+            break;
         default:
             require "Controller/HomeController.php";
             $controlador = new ControladorHome();
